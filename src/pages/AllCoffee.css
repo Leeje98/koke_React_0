@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Noto+Sans+KR:wght@100;300;400;500;700&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+* {margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+img {display: block;}
+li {list-style: none;}
+a {text-decoration: none; color: #222;}
+a:hover {color: #222;}
+
+
+
+
+section {
+    margin-top: 150px;
+}
+
+.label_box {
+    padding: 50px 0;
+}
+
+.label_box label {
+    width: auto;
+    margin: 0 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#all, #sing, #bl, #de {display: none;}
+
+#all:checked ~ .label_box .btn_all {font-weight: bold;}
+#sing:checked ~ .label_box .btn_sing {font-weight: bold;}
+#bl:checked ~ .label_box .btn_bl {font-weight: bold;}
+#de:checked ~ .label_box .btn_de {font-weight: bold;}
+
+
+#all:checked ~ .label_box .btn_all::after,
+#sing:checked ~ .label_box .btn_sing::after,
+#bl:checked ~ .label_box .btn_bl::after,
+#de:checked ~ .label_box .btn_de::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #222;
+}
+
+.product_container {display: none;}
+
+#all:checked ~ .all_container,
+#sing:checked ~ .sing_container,
+#bl:checked ~ .bl_container,
+#de:checked ~ .de_container {
+    width: 1278px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.product_box {
+    width: 280px;
+    border: 1px solid #ddd;
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.product_box:hover {
+    transform: scale(1.01);
+}
+
+.product_box .main_poto {
+    border-bottom: 1px solid #ddd;
+    height: 280px;
+    position: relative;
+}
+.product_box .main_poto img {
+    /* width: 100%; */
+    width: 280px;
+}
+
+.product_box .main_poto .btnBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    background-color: #808080b3;
+    border-radius: none;
+    opacity: 0;
+    transition: 0.3s;
+}
+.product_box:hover .main_poto .btnBox {
+    opacity: 1;
+    border-radius: 1px;
+}
+.product_box .main_poto .btnBox .icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 100px;
+    padding: 10px;
+    color: white;
+    opacity: 0.6;
+    border-bottom: 4px solid white;
+}
+.product_box .main_poto .btnBox .icon:hover {
+    opacity: 1;
+}
+.product_box .main_poto .btnBox .heart_icon {
+    margin-right: 20px;
+}
+
+
+
+.product_box .text_box {
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.product_box .text_box .taste {
+    font-size: 18px;
+}
+
+.product_box .text_box .title {
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.product_box .text_box .price {
+    margin-top: 10px;
+    font-size: 16px;
+}
+.product_box .text_box .price span {
+    font-size: 14px;
+}
+
+.product_box .text_box .logo {
+    display: flex;
+    justify-content: center;
+}
+.product_box .text_box .logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-right: 7px;
+    border: 1px solid #ddd;
+}
+.product_box .text_box .logo p {
+    line-height: 30px;
+}
+
+.bestBtn {
+    margin-top: 30px;
+}
