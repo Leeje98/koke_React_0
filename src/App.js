@@ -32,7 +32,7 @@ function App() {
           <Navbar.Brand onClick={() => {navigate('/')}}>
             <img
               alt=""
-              src="../public/imags/koke_logo.png"
+              src="../imags/koke_logo.png"
               width="120"
               height="auto"
               className="d-inline-block align-top"
