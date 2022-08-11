@@ -16,15 +16,15 @@ export default function CoffeeDetail() {
     <>
     <section className='warp'>
       {
-        all_product.map((value, i) => {
+        all_product.map(function(value, i)  {
           if (value.id.includes('product_01')) {
             return (
               <>
                 <div className='nav'>
                   <a href="/">홈</a>
-                  <span>></span>
+                  <span>{'>'}</span>
                   <a href="/allCoffee">모든 커피</a>
-                  <span>></span> 
+                  <span>&gt;</span> 
                   <a href="/allCoffee/">{value.name}</a>  
                   {/* 연결주소 수정 */}
                 </div>
