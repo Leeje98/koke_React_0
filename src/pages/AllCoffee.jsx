@@ -56,8 +56,8 @@ export default function AllCoffee() {
 
         <div className='product_container sing_container'>
           {
-            // all_product.map((value, i) => {
-            all_product.map((value) => {
+            // eslint-disable-next-line array-callback-return
+            all_product.map((value, i) => {
               if (value.id.includes('S')) {
                 return (
                   <a href={value.link} className='product_box'>
@@ -92,6 +92,7 @@ export default function AllCoffee() {
 
         <div className='product_container bl_container'>
           {
+            // eslint-disable-next-line array-callback-return
             all_product.map((value, i) => {
               if (value.id.includes('B')) {
                 return (
@@ -127,6 +128,7 @@ export default function AllCoffee() {
 
         <div className='product_container de_container'>
           {
+            // eslint-disable-next-line array-callback-return
             all_product.map((value, i) => {
               if (value.id.includes('D')) {
                 return (

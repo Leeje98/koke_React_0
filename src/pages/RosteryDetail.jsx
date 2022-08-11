@@ -82,7 +82,7 @@ export default function RosteryDetail() {
                                               <h5 className='title'>{value.name}</h5>
                                               <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                               <div className='logo'>
-                                                  <img src={`../imags/Rostary_logo/${value.logoImg}`} width='50px'/>
+                                                  <img src={`../imags/Rostary_logo/${value.logoImg}`} alt='이미지' width='50px'/>
                                                   <p>{value.cafeName}</p>
                                               </div>
                                           </div>
