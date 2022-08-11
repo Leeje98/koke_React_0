@@ -56,7 +56,7 @@ function App() {
       <div className='top_banner'>
         <div className='top_banner_inner'>
           <p>구독 시작하면 3,000원 즉시 할인 · 무료 교환 · 무료 배송</p>
-          <a>내 취향 커피 추천받기 <FontAwesomeIcon icon={faAngleRight} /></a>
+          <a href='#!'>내 취향 커피 추천받기 <FontAwesomeIcon icon={faAngleRight} /></a>
 
           <FontAwesomeIcon icon={faXmark} className='top_banner_close' onClick={hiddenEvent}/>
         </div>

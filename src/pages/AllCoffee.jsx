@@ -56,7 +56,8 @@ export default function AllCoffee() {
 
         <div className='product_container sing_container'>
           {
-            all_product.map((value, i) => {
+            // all_product.map((value, i) => {
+            all_product.map((value) => {
               if (value.id.includes('S')) {
                 return (
                   <a href={value.link} className='product_box'>
@@ -111,7 +112,7 @@ export default function AllCoffee() {
                                       <h5 className='title'>{value.name}</h5>
                                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                       <div className='logo'>
-                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} width='50px'/>
+                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} alt='이미지' width='50px'/>
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>
