@@ -13,7 +13,7 @@ export default function AllCoffee() {
   return (
     <>
       <section>
-        <input type="radio" id='all' name='filter' checked/>
+        <input type="radio" id='all' name='filter' defaultChecked/>
         <input type="radio" id='sing' name='filter'/>
         <input type="radio" id='bl' name='filter'/>
         <input type="radio" id='de' name='filter'/>

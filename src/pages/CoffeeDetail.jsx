@@ -79,7 +79,7 @@ export default function CoffeeDetail() {
                       </div>
 
                       <div className='box box04'>
-                        <div className="img_box">
+                        <div className="img_box" alt='.'>
                           <img src={icon_04} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
@@ -199,7 +199,7 @@ export default function CoffeeDetail() {
 
                 </div>
               </>
-            )
+            ) //return
           }
         })
       }
