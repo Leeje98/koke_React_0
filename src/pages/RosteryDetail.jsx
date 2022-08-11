@@ -23,7 +23,7 @@ export default function RosteryDetail() {
             <div className='nav'>
               {/* <a href="/allRostery">로스터리</a> */}
               <Link to="/allRostery">로스터리</Link>
-              <span></span> 
+              <span>{'>'}</span> 
               <a href="/allRostery/">{value.cafeName}</a>  
               {/* 연결주소 수정 */}
             </div>

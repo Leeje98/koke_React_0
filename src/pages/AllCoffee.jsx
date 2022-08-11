@@ -39,7 +39,7 @@ export default function AllCoffee() {
                       <FontAwesomeIcon className='cart_icon icon' icon={faCartShopping} />
                     </div>
                   </div><div className='text_box'>
-                      <h5 className='taste'>{value.taste01} & {value.taste02}</h5>
+                      <h5 className='taste'>{value.taste01} {'&'} {value.taste02}</h5>
                       <h5 className='title'>{value.name}</h5>
                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                       <div className='logo'>

@@ -80,7 +80,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box04'>
                         <div className="img_box">
-                        <img src={icon_04} alt="아이콘 이미지" />
+                          <img src={icon_04} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_04_t}</h4>
