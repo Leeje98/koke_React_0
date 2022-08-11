@@ -23,15 +23,15 @@ export default function RosteryDetail() {
             <div className='nav'>
               {/* <a href="/allRostery">로스터리</a> */}
               <Link to="/allRostery">로스터리</Link>
-              <span>></span> 
+              <span></span> 
               <a href="/allRostery/">{value.cafeName}</a>  
               {/* 연결주소 수정 */}
             </div>
 
             <div className='cafe_poto_box'>
-              <div className="poto_01_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_01}`} width='280px'/></div>
-              <div className="poto_02_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_02}`} width='280px'/></div>
-              <div className="poto_03_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_03}`} width='280px'/></div>
+              <div className="poto_01_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_01}`} alt="로스터리 이미지" width='280px'/></div>
+              <div className="poto_02_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_02}`} alt="로스터리 이미지" width='280px'/></div>
+              <div className="poto_03_imgbox"><img src={`../imags/poto_img/${value.cafe_poto_03}`} alt="로스터리 이미지" width='280px'/></div>
 
               <div className="logo_imgbox"><img src={`../imags/Rostary_logo/${value.logoImg}`} alt="로스터리 로고" /></div>
             </div>
@@ -65,7 +65,7 @@ export default function RosteryDetail() {
                           <a href={value.link} className='product_box'>
                           {/* <Route path="/all_product:id"> */}
                             <div className='main_poto'>
-                                              <img src={`../imags/all_product/${value.productImg}`} width='280px'/>
+                                              <img src={`../imags/all_product/${value.productImg}`} alt="상품 이미지" width='280px'/>
                                               
                                               <div className="btnBox">
                                                   <FontAwesomeIcon className='heart_icon icon' icon={faHeart} />
@@ -75,7 +75,7 @@ export default function RosteryDetail() {
                                           
                                           
                                           <div className='text_box'>
-                                              <h5 className='taste'>{value.taste01} & {value.taste02}</h5>
+                                              <h5 className='taste'>{value.taste01} {'&'} {value.taste02}</h5>
                                               <h5 className='title'>{value.name}</h5>
                                               <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                               <div className='logo'>

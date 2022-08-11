@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
+// import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom';
 import './AllCoffee.css';
 import all_product from '../components/All_product_list'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,7 +32,7 @@ export default function AllCoffee() {
                 <a href={value.link} className='product_box'>
                   
                   <><div className='main_poto'>
-                    <img src={`./imags/all_product/${value.productImg}`} width='280px' />
+                    <img src={`./imags/all_product/${value.productImg}`} alt="이미지" width='280px' />
 
                     <div className="btnBox">
                       <FontAwesomeIcon className='heart_icon icon' icon={faHeart} />
@@ -43,7 +43,7 @@ export default function AllCoffee() {
                       <h5 className='title'>{value.name}</h5>
                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                       <div className='logo'>
-                        <img src={`./imags/Rostary_logo/${value.logoImg}`} width='50px' />
+                        <img src={`./imags/Rostary_logo/${value.logoImg}`} alt="이미지" width='50px' />
                         <p>{value.cafeName}</p>
                       </div>
                     </div></>
@@ -62,7 +62,7 @@ export default function AllCoffee() {
                   <a href={value.link} className='product_box'>
                     
                     <div className='main_poto'>
-                                      <img src={`./imags/all_product/${value.productImg}`} width='280px'/>
+                                      <img src={`./imags/all_product/${value.productImg}`} alt="이미지" width='280px'/>
                                       
                                       <div className="btnBox">
                                           <FontAwesomeIcon className='heart_icon icon' icon={faHeart} />
@@ -76,7 +76,7 @@ export default function AllCoffee() {
                                       <h5 className='title'>{value.name}</h5>
                                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                       <div className='logo'>
-                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} width='50px'/>
+                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} alt="이미지" width='50px'/>
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>
@@ -132,7 +132,7 @@ export default function AllCoffee() {
                   <a href={value.link} className='product_box'>
                     
                     <div className='main_poto'>
-                                      <img src={`./imags/all_product/${value.productImg}`} width='280px'/>
+                                      <img src={`./imags/all_product/${value.productImg}`} alt="이미지" width='280px'/>
                                       
                                       <div className="btnBox">
                                           <FontAwesomeIcon className='heart_icon icon' icon={faHeart} />
@@ -146,7 +146,7 @@ export default function AllCoffee() {
                                       <h5 className='title'>{value.name}</h5>
                                       <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                       <div className='logo'>
-                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} width='50px'/>
+                                          <img src={`./imags/Rostary_logo/${value.logoImg}`} alt="이미지" width='50px'/>
                                           <p>{value.cafeName}</p>
                                       </div>
                                   </div>

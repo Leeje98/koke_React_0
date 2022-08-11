@@ -50,7 +50,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box01'>
                         <div className="img_box">
-                          <img src={icon_01} />
+                          <img src={icon_01} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_01_t}</h4>
@@ -60,7 +60,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box02'>
                         <div className="img_box">
-                          <img src={icon_02} />
+                          <img src={icon_02} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_02_t}</h4>
@@ -70,7 +70,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box03'>
                         <div className="img_box">
-                        <img src={icon_03} />
+                        <img src={icon_03} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_03_t}</h4>
@@ -80,7 +80,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box04'>
                         <div className="img_box">
-                        <img src={icon_04} />
+                        <img src={icon_04} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_04_t}</h4>
@@ -89,7 +89,7 @@ export default function CoffeeDetail() {
 
                       <div className='box box05'>
                         <div className="img_box">
-                        <img src={icon_05} />
+                        <img src={icon_05} alt="아이콘 이미지" />
                         </div>
                         <div className="text_box">
                           <h4>{value.info_05_t}</h4>

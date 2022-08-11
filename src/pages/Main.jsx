@@ -34,7 +34,7 @@ export default function Main() {
                         return (
                             <a className='col-md-3 best_product'  href={value.link}> 
                                 <div className='main_poto'>
-                                    <img src={`./imags/main/pd_${value.imgNumber}.png`} width='280px'/>
+                                    <img src={`./imags/main/pd_${value.imgNumber}.png`} alt="이미지" width='280px'/>
                                     
                                     <div className="btnBox">
                                         <FontAwesomeIcon className='heart_icon icon' icon={faHeart} />
@@ -48,7 +48,7 @@ export default function Main() {
                                     <h5 className='title'>{value.title}</h5>
                                     <p className='price'>{value.price}원 / <span>{value.weight}g</span></p>
                                     <div className='logo'>
-                                        <img src={`./imags/main/logo_${i+1}.${value.logoimgtype}`} width='50px'/>
+                                        <img src={`./imags/main/logo_${i+1}.${value.logoimgtype}`} alt="이미지" width='50px'/>
                                         <p>{value.cafeName}</p>
                                     </div>
                                 </div>
@@ -83,12 +83,12 @@ export default function Main() {
                         return (
                             <a className='col-md-3'  href={value.link}> 
                                 <div className='main_poto'>
-                                    <img src={`./imags/main/roastery_${i+1}.jpg`} width='280px'/>
+                                    <img src={`./imags/main/roastery_${i+1}.jpg`} alt="이미지" width='280px'/>
                                 </div>
                                 
                                 
                                 <div className='text'>
-                                    <div className='logo'><img src={`./imags/main/logo_${i+1}.jpg`} width='50px'/></div>
+                                    <div className='logo'><img src={`./imags/main/logo_${i+1}.jpg`} alt="이미지" width='50px'/></div>
 
                                     <h5>{value.title}</h5>
                                     <p>/ {value.map}</p>
