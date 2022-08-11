@@ -25,7 +25,7 @@ export default function RosteryDetail() {
             <div className='nav'>
               {/* <a href="/allRostery">로스터리</a> */}
               <Link to="/allRostery">로스터리</Link>
-              <span>{'>'}</span> 
+              <span></span> 
               <a href="/allRostery/">{value.cafeName}</a>  
               {/* 연결주소 수정 */}
             </div>
@@ -64,7 +64,7 @@ export default function RosteryDetail() {
                   all_product.map((value, i) => {
                     if(value.cafeName.includes('나무사이로')) {
                       return (
-                        // <>
+                        <>
                           <a href={value.link} className='product_box'>
                           {/* <Route path="/all_product:id"> */}
                             <div className='main_poto'>
@@ -88,7 +88,7 @@ export default function RosteryDetail() {
                                           </div>
                           {/* </Route> */}
                           </a>
-                        // </>
+                        </>
                       )
                     }
                   })
