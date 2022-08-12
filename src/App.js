@@ -1,4 +1,4 @@
-/* eslint-disable    --  주석걸어 이 위치에 써주면 선언이 되었으나 사용전의 노란색 밑줄 없애줌 */
+
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
