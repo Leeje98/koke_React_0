@@ -2,6 +2,7 @@
   "name": "shop",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
@@ -48,5 +49,5 @@
   "devDependencies": {
     "gh-pages": "^4.0.0"
   },
-  "homepage": "http://Leeje98.github.io/koke_React"
+  // "homepage": "http://Leeje98.github.io/koke_React"
 }
