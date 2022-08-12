@@ -23,7 +23,7 @@ export default function CoffeeDetail() {
               <>
                 <div className='nav'>
                   <a href="/">홈</a>
-                  <span></span>
+                  <span>{'>'}</span>
                   <a href="/allCoffee">모든 커피</a>
                   <span>&gt;</span> 
                   <a href="/allCoffee/">{value.name}</a>  
